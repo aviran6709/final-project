@@ -24,11 +24,6 @@ const auth = require('./midelweres/auth');
 //req log winston
 app.use(requestLogger)
 
-app.use( (req,res ,next)=>{
-  req.user = {_id :"62934b43ebaa487c5ae570e4"}
-  next()
-})
-
 app.post(`/signup`,creatUsers)
 app.post(`/signin`,login)
 app.use(auth)
