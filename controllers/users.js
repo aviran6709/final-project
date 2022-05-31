@@ -1,7 +1,7 @@
 const UserSchema = require("../models/users");
 const bcrypt = require("bcryptjs");
 const notFundError = require("../errors/notFundError");
-const InvalidDataError = require("../errors/invalidDataError");
+const invalidDataError = require("../errors/invalidDataError");
 const jwt = require('jsonwebtoken');
 const midServerError = require("../errors/midServerError");
 require('dotenv').config();
@@ -48,7 +48,7 @@ const {email, password} = req.body
 UserSchema.findOne({email}) .select('+password')
 .then((user) => {
   if (!user) {
-    throw new InvalidDataError ('Incorrect password or email');
+    throw new invalidDataError ('Incorrect password or email');
   }
   console.log(user._id);
    userId = user._id;
@@ -58,7 +58,7 @@ UserSchema.findOne({email}) .select('+password')
 .then((matched) => {
   if (!matched) {
     // the hashes didn't match, rejecting the promise
-  throw new InvalidDataError ('Incorrect password or email');
+  throw new invalidDataError ('Incorrect password or email');
   }
 
   
