@@ -1,20 +1,15 @@
-
-import './App.css';
-import Navigation from "../Navigation/Navigation"
+import {  BrowserRouter } from "react-router-dom";
+import Router from "../Router/Router";
 function App() {
   return (
-  <div className = "app">
-<Navigation isLogin = {true}>
+  
+<div className = "app">
 
-
-</Navigation>
-
-
-
-
-
+<BrowserRouter>
+<Router/>
+</BrowserRouter>
   </div>
-    )
+  )
 }
 
 export default App;
