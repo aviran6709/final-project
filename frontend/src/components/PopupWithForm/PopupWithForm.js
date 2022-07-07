@@ -118,9 +118,9 @@ if(isSuccess && !isSignin){
           </form>
           <p className="popup__subtitle">
             or{" "}
-            <a onClick={()=>{setIsSignin(true)} } className="popup__link " href="#">
+            <span onClick={()=>{setIsSignin(true)} } className="popup__link " >
               Sign in
-            </a>
+            </span>
           </p>
         </div>
       </div>
@@ -188,9 +188,9 @@ if(isSuccess && !isSignin){
           </form>
           <p className="popup__subtitle">
             or{" "}
-            <a onClick={()=>{setIsSignin(false)}} className="popup__link">
+            <span onClick={()=>{setIsSignin(false)}} className="popup__link">
               Sign up
-            </a>
+            </span>
           </p>
         </div>
       </div>

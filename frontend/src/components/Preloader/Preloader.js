@@ -1,3 +1,4 @@
+import React from "react";
 const Preloader = (props) => {
   if (props.isFund) {
     return (

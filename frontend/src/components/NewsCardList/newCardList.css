@@ -1,5 +1,5 @@
 .news-results__tittle {
-  font-family: "Roboto Slab";
+  font-family: "Roboto Slab,Arial, Helvetica, sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -13,6 +13,9 @@
   row-gap: 8px;
   grid-template-columns: 1fr 1fr 1fr;
   margin: auto;
+}
+.card-list__element{
+  list-style: none;
 }
 .news-results {
   display: flex;
@@ -28,11 +31,12 @@
   width: 288px;
   margin: 56px auto 80px;
   border: 0;
-  font-family: "Roboto";
+  font-family: "Roboto Slab,Arial, Helvetica, sans-serif";
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
+  cursor: pointer;
 }
 .news-results__btn:hover {
   background: #e8e8e8;
@@ -53,6 +57,8 @@
   .news-results__tittle {
     font-size: 30px;
     line-height: 34px;
+    margin: 0px 40px 32px;
+    
   }
 }
 @media screen and (max-width: 740px) {

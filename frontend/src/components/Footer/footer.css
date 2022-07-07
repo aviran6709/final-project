@@ -16,7 +16,7 @@
 }
 
 .footer__tittle {
-  font-family: "Roboto";
+  font-family: "Roboto Slab,Arial, Helvetica, sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -30,6 +30,7 @@ margin: 0;
   align-items: center;
   margin: 21px 0 ;
   justify-content: space-around;
+  cursor: pointer;
   
 }
 .footer__links_text {
@@ -42,9 +43,11 @@ margin: 0;
   text-align: center;
   color: #1a1b22;
   margin-right: 46px;
+  cursor: pointer;
 }
 .footer__links_btn :nth-child(2) {
   margin-left: 27px;
+  text-decoration: none;
  
 }
 @media screen and (max-width: 1200px)  {
