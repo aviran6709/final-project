@@ -1,4 +1,4 @@
-import Footer from "../Footer/Footer"
+
 import Navigation from "../Navigation/Navigation"
 import NewsCardList from "../NewsCardList/NewsCardList"
 import React from "react";
@@ -18,7 +18,7 @@ return(<>
     <h3 className="save-news__subtitle-resource" >By keywords: <p className="save-news__subtitle-tag">{uniqueTags.length < 2?uniqueTagsForDisplay:`${uniqueTagsForDisplay}  , and  ${uniqueTags.length - 2} other` }</p></h3>
  </div>
 <NewsCardList isDarkThem={true} cardData={cardData}></NewsCardList>
-<Footer></Footer>
+
 </section>
 </>
 

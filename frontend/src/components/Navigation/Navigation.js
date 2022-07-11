@@ -1,16 +1,11 @@
 import React from "react";
-// import { useEffect } from "react/cjs/react.production.min";
 // import { UserContext } from "../UserConetext";
 
  function Navigation(props){
-     const name="adi"
-//  let   user = React.useContext(UserContext);
-//      let name
-//     React.useEffect(() => {
-//          name =UserContext.name   
-// console.log(user);
-//       }, [UserContext] );
-
+    
+//  const user = React.useContext(UserContext);
+ const name = "eddi"
+//   user.name? user.name: "";
 const [isItMenu, setIsItMenu]= React.useState(false);
 const onClickBtnMenu =()=>{
     isItMenu?setIsItMenu(false):setIsItMenu(true)

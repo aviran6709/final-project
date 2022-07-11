@@ -58,7 +58,7 @@ font-style: normal;
 }
 
 .popup__label{
-  font-family: "Inter ,Arial, Helvetica, sans-serif";
+  font-family: "Inter" ,Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -78,7 +78,7 @@ margin-bottom: 9px;
 text-decoration: none;
   color: #2F71E5;
   margin-bottom: 28px;
-
+  cursor: pointer;
 font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
@@ -93,7 +93,7 @@ font-weight: 400;
 }
 .popup__tittle{
   margin-top: 34px;
-  font-family: "Roboto,Arial, Helvetica, sans-serif";
+  font-family: "Roboto",Arial, Helvetica, sans-serif;
 font-style: normal;
 font-weight: 900;
 }
@@ -176,6 +176,13 @@ margin: 16px;
   }
 }
 
+@media screen and (max-width: 515px) {
+  .popup__close-btn{
+ right:  26px;
+    top:-46px;
+
+  }
+}
 @media screen and (max-width: 450px) {
   .popup__close-btn{
 background-size: cover;
@@ -183,7 +190,6 @@ width: 24px;
 height: 24px;
  right:  26px;
     top:-36px;
-    ;
 
   }
 }

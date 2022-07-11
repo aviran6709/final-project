@@ -3,7 +3,6 @@ const customFetch = (url, headers) => {
     return fetch(url, headers).then((res) => {
         if (res.ok) {  return res.json(); }
         else { 
-       
             Promise.reject(res.statusText); }
     })
 
@@ -20,11 +19,14 @@ class Api {
         
     }
 
-    getArticle =()=>{
-        return customFetch (`${this.baseUrl}/articles`, { headers: this.headers })
+    getArticle =(ownerId)=>{
+        return customFetch (`${this.baseUrl}/articles/${ownerId}`, { headers: this.headers })
+    }
+    unsavedNewArticle =(itemId)=>{
+        return customFetch (`${this.baseUrl}/articles/${itemId}`, {method:"delete", headers: this.headers })
     }
   saveArticle =(data)=> {
-        return customFetch(`${this.baseUrl}/article`, {
+        return customFetch(`${this.baseUrl}/articles`, {
             method: "POST",
             headers: this.headers,
             body: JSON.stringify({
@@ -32,9 +34,9 @@ class Api {
                 title: data.title,
                 text: data.text,
                 date: data.date,
-                source: data.source,
+                source: data.src,
                 link: data.link,
-                image: data.image
+                image: data.imagLink 
              
             })
         })

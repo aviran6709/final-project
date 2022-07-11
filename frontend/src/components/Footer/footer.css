@@ -16,7 +16,7 @@
 }
 
 .footer__tittle {
-  font-family: "Roboto Slab,Arial, Helvetica, sans-serif";
+  font-family: "Roboto",Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -28,7 +28,7 @@ margin: 0;
   display: flex;
   list-style-type: none;
   align-items: center;
-  margin: 21px 0 ;
+
   justify-content: space-around;
   cursor: pointer;
   
@@ -86,6 +86,7 @@ margin: 0;
 padding: 0;
 justify-self: unset;
 margin: 0;
+height: 64px;
 
   }
 }
@@ -95,6 +96,7 @@ flex-direction: column-reverse;
 max-height: 176px;
 padding-top: 20px;
 padding-bottom: 22px;
+height: auto;
 
   }
 }

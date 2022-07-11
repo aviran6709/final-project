@@ -1,5 +1,5 @@
 .news-results__tittle {
-  font-family: "Roboto Slab,Arial, Helvetica, sans-serif";
+  font-family: "Roboto Slab",Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -11,11 +11,14 @@
   display: grid;
   column-gap: 16px;
   row-gap: 8px;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: auto;
+  grid-template-columns: 400px 400px 400px;
+  margin: 0px auto;
+  padding: 0px;
 }
 .card-list__element{
   list-style: none;
+max-width: fit-content;
+  margin: 0px;
 }
 .news-results {
   display: flex;
@@ -31,7 +34,7 @@
   width: 288px;
   margin: 56px auto 80px;
   border: 0;
-  font-family: "Roboto Slab,Arial, Helvetica, sans-serif";
+  font-family: "Roboto",Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -42,9 +45,10 @@
   background: #e8e8e8;
   opacity: 0.9;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1233px) {
   .card-list {
     column-gap: 8px;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -57,7 +61,7 @@
   .news-results__tittle {
     font-size: 30px;
     line-height: 34px;
-    margin: 0px 40px 32px;
+    margin: 20px 40px 32px;
     
   }
 }
@@ -67,6 +71,12 @@
   }
 }
 @media screen and (max-width: 740px) {
+  .news-results {
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+}
+@media screen and (max-width: 1200px) {
   .news-results {
     margin-top: 0px;
     padding-top: 0px;
