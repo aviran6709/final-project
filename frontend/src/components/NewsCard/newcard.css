@@ -76,14 +76,14 @@
   background-image: url("../../image/Rectangle\ 8-min.svg");
 }
 
-.card__btn_clicked {
+.card__btn-clicked {
   background-image: url("../../image/blue\ reck-min.svg");
 }
 
-.card__btn_clicked:hover {
+.card__btn-clicked:hover {
   background-image: url("../../image/blue\ reck-min.svg");
 }
-.card__btn_saved {
+.card__btn-saved {
   position: absolute;
   right: 24px;
   top: 24px;
@@ -99,7 +99,7 @@
   border: 0;
   cursor: pointer;
 }
-.card__btn_saved:hover {
+.card__btn-saved:hover {
   background-image: url("../../image/trash-min.svg");
 }
 
@@ -146,26 +146,26 @@
   text-align: center;
   color: #000000;
 }
-@media screen and (max-width: 1233px) {
+@media screen and (max-width: 1248px) {
   .card {
     max-width: 224px;
     max-height: 420px;
   }
 }
-@media screen and (max-width: 1233px) {
+@media screen and (max-width:1248px) {
   .card__img {
     max-width: 224px;
 max-height: 150px;
   }
 }
 
-@media screen and (max-width: 1233px) {
+@media screen and (max-width: 1248px) {
   .card__date {
 margin-top: 20px;
 margin-bottom: 8px;
 margin: 16px 15px 8px;
   }}
-@media screen and (max-width: 1233px) {
+@media screen and (max-width: 1248px) {
   .card__tittle {
     font-size: 22px;
     line-height: 24px;
@@ -173,14 +173,14 @@ margin: 16px 15px 8px;
     margin-bottom: 10px;
   }
 }
-@media screen and (max-width: 1233px) {
+@media screen and (max-width: 1248px) {
   .card__src {
 margin: 12px 16px 16px;
   }
 }
 
 
-@media screen and (max-width: 1233px) {
+@media screen and (max-width: 1248px) {
   .card__text {
     overflow: hidden;
     display: -webkit-box;

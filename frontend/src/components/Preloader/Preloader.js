@@ -4,7 +4,7 @@ const Preloader = (props) => {
     return (
       <div className="preloader">
         <img
-          className="preloader__img circle-preloader"
+          className="preloader__img preloader__img_circle-preloader"
           src={require("../../image/Ellipse-min.svg")}
           alt="Ellipse"
         />

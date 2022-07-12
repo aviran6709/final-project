@@ -23,18 +23,14 @@ React.useEffect(() => {
    return () => document.removeEventListener('keydown', closeByEscape)
 }, [])
     return(
-   
     <header  className ="header" >
     <Navigation  openPopup={openPopup} isDarkThem={false} isLogin = {true}></Navigation>    
     <PopupWithForm isOpen={isOpen}
 onClose={closePopups}
 ></PopupWithForm>
 <SearchFrom></SearchFrom>
-
 </header>
-
-  
-    )
+)
 }
 
 export default Header

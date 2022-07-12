@@ -27,7 +27,7 @@ if(isSuccess && !isSignin){
      <p className="popup__text">Registration successfully   completed!</p>
      <p className="popup__subtitle">
        <p onClick={()=>{setIsSignin(true)
-        setIsSuccess(false)}} className="popup__link_success">
+        setIsSuccess(false)}} className="popup__link-success">
          Sign in
        </p>
      </p>

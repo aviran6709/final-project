@@ -45,7 +45,7 @@ max-width: fit-content;
   background: #e8e8e8;
   opacity: 0.9;
 }
-@media screen and (max-width: 1233px) {
+@media screen and (max-width: 1248px) {
   .card-list {
     column-gap: 8px;
     grid-template-columns: 1fr 1fr 1fr;

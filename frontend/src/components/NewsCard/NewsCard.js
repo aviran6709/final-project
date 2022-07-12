@@ -22,7 +22,7 @@ const buttonHandler =()=>{
     <div className="card">
       <img className="card__img" src={imagLink} alt={`${tittle}`}/>
       {props.isDarkThem? <p className="card__tag" >{tag}</p>: ""}
-      <button className={props.isDarkThem?"card__btn_saved ":`card__btn ${isSavedCard ? " card__btn_clicked" :""}`  } onClick={buttonHandler} onMouseEnter={toggelSigninBtn} onMouseLeave={toggelSigninBtn}></button>
+      <button className={props.isDarkThem?"card__btn-saved ":`card__btn ${isSavedCard ? " card__btn-clicked" :""}`  } onClick={buttonHandler} onMouseEnter={toggelSigninBtn} onMouseLeave={toggelSigninBtn}></button>
       { isOpen  ? <button className="card__link"  > {props.isDarkThem ?"Remove from saved":"Sign in to save articles"}</button>:" "}
       <p className="card__date">{date}</p>
       <h3 className="card__tittle">{tittle}</h3>
