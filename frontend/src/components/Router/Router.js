@@ -1,12 +1,25 @@
 import {  Routes,Route } from 'react-router-dom';
-import Main from '../Main/Main';
+import React from "react";
 import SaveNewsHeader from '../SavedNewsHeader/SaveNewsHeader';
+import Header from '../Header/Header';
+import Main from '../Main/Main';
+import ProtectedRoute from '../ProtectedRoute';
 
-const Router =()=>{
+
+const Router =(props)=>{
+
+const  functionHeder = props.headerFunc[0]
+
+React.useEffect( () => {
+
+      },[]); 
+
+
     return(
         <Routes>
-     <Route  exact path="/" element={<Main/>}   />
-        <Route path='/saved-news' element={<SaveNewsHeader/>}/>
+         <Route path='/saved-news' element={ <ProtectedRoute isAuth={props.LoggedIn} component={SaveNewsHeader}/> }/>
+   <Route path='/' element={<><Header isLoggedIn={props.LoggedIn} headerFunc={functionHeder}/> <Main  isLoggedIn={props.LoggedIn}/></>} />
+      
         </Routes>
     )
 }

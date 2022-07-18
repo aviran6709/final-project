@@ -1,5 +1,5 @@
 .search-from__tittle {
-  font-family: "Roboto Slab";
+  font-family: "Roboto Slab",Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 60px;
@@ -31,7 +31,7 @@
   height: 64px;
   border: 0px;
   padding-left: 24px;
-  font-family: "Roboto";
+  font-family: 'Roboto' ,Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -56,11 +56,19 @@
   background: #2f71e5;
   box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
   color: #ffffff;
+  cursor: pointer;
 }
 
 .search-from__btn:hover {
   background: #347eff;
 }
+.search-from__btn_clicked {
+  background: #2A65CC;
+}
+.search-from__btn_clicked:hover{
+  background: #2A65CC;
+}
+
 .search-from__search-bar {
   display: flex;
   margin: 0;
@@ -73,7 +81,7 @@
     font-size: 36px;
     line-height: 40px;
     max-width: 385px;
-    margin: 80px 0px 32px;
+    margin: 38px 0px 16px;
   }
 }
 @media screen and (max-width: 1200px) {

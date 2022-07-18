@@ -1,10 +1,11 @@
+import React from "react";
 const Preloader = (props) => {
   if (props.isFund) {
     return (
       <div className="preloader">
         <img
-          className="preloader__img"
-          src={require("../../image/Ellipse-min.png")}
+          className="preloader__img preloader__img_circle-preloader"
+          src={require("../../image/Ellipse-min.svg")}
           alt="Ellipse"
         />
         <p className="preloader__text">Searching for news...</p>
@@ -15,7 +16,7 @@ const Preloader = (props) => {
       <div className="preloader">
         <img
           className="preloader__img"
-          src={require("../../image/not-found_v1-min.png")}
+          src={require("../../image/not-found_v1.svg")}
           alt="Ellipse"
         />
         <h1 className= "preloader__tittle">Nothing found</h1>

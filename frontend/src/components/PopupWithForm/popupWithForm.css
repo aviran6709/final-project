@@ -40,6 +40,7 @@ font-size: 18px;
 line-height: 24px;
 color: #ffffff;
 margin-top: 7px;
+cursor: pointer;
 }
 .popup__input{
   width: 358px;
@@ -49,10 +50,15 @@ margin-bottom: 33px;
 color: black;
 font-family: 'Inter';
 font-style: normal;
-
 }
+
+.popup__input:focus {
+
+  outline: none;
+}
+
 .popup__label{
-  font-family: 'Inter';
+  font-family: "Inter" ,Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -72,7 +78,7 @@ margin-bottom: 9px;
 text-decoration: none;
   color: #2F71E5;
   margin-bottom: 28px;
-
+  cursor: pointer;
 font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
@@ -87,7 +93,7 @@ font-weight: 400;
 }
 .popup__tittle{
   margin-top: 34px;
-  font-family: 'Roboto';
+  font-family: "Roboto",Arial, Helvetica, sans-serif;
 font-style: normal;
 font-weight: 900;
 }
@@ -120,7 +126,7 @@ text-align: start;
 color: #000000;
 
 }
-.popup__link_success{
+.popup__link-success{
   text-align: start;
   margin: 0 0 54px 36px;
   color: #2F71E5;
@@ -170,6 +176,13 @@ margin: 16px;
   }
 }
 
+@media screen and (max-width: 515px) {
+  .popup__close-btn{
+ right:  26px;
+    top:-46px;
+
+  }
+}
 @media screen and (max-width: 450px) {
   .popup__close-btn{
 background-size: cover;
@@ -177,7 +190,6 @@ width: 24px;
 height: 24px;
  right:  26px;
     top:-36px;
-    ;
 
   }
 }
