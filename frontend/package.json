@@ -21,7 +21,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test"
   },
-
   "browserslist": {
     "production": [
       ">0.2%",
@@ -35,7 +34,6 @@
     ]
   },
   "devDependencies": {
-
     "react-router-dom": "^6.3.0"
   }
 }

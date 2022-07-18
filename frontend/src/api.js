@@ -14,6 +14,16 @@ class Api {
 
     }
 
+    setToken =()=>{
+    const token = localStorage.getItem("jwt")
+    return customFetch(`${this.baseUrl}/users/me`, { headers: {
+    'Access-Control-Allow-Origin': '*',
+    'Accept': 'application/json',
+    'Content-Type': 'application/json',
+    Authorization:`Bearer ${token}`
+  }})
+}
+
     getUserInfo = ()=>{
         return customFetch(`${this.baseUrl}/users/me`, { headers: this.headers })
         
@@ -41,6 +51,34 @@ class Api {
             })
         })
     }
+     signup =(data)=>{
+
+        return customFetch(`${this.baseUrl}/signup`,{
+            method:"POST",
+            headers: this.headers,
+            body: JSON.stringify ({
+                name:data.name,
+                email:data.email,
+                password:data.password
+
+            })
+    
+    })
+         } 
+
+         signin = (data)=>{
+            return customFetch(`${this.baseUrl}/signin`,{
+                method:"POST",
+                headers: this.headers,
+                body:JSON.stringify(
+                 { 
+                    email:data.email,
+                    password:data.password}
+                )
+            })}
+
+
+
 }
 
 
@@ -55,8 +93,7 @@ class Api {
         'Access-Control-Allow-Origin': '*',
         'Accept': 'application/json',
         'Content-Type': 'application/json',
-        Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmMxODBhOTdhZjM2ZjRkMjAzZWYxNzYiLCJpYXQiOjE2NTY4NDg1ODIsImV4cCI6MTY1NzQ1MzM4Mn0.3RiT6EcIh0rLNQfk29zCTwMI3NREV1mJOHaGTvzZDek",
-        
+        authorization:`Bearer ${localStorage.getItem("jwt")}`,
       }
 });
 

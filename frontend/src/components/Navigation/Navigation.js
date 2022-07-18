@@ -1,18 +1,19 @@
 import React from "react";
-// import { UserContext } from "../UserConetext";
+import { UserContext } from "../UserConetext";
 
  function Navigation(props){
     
-//  const user = React.useContext(UserContext);
- const name = "eddi"
-//   user.name? user.name: "";
-const [isItMenu, setIsItMenu]= React.useState(false);
+ const data = React.useContext(UserContext);
 
+ const {user ,savedCard} = data
+ const name =  user? user.name: "";
+const [isItMenu, setIsItMenu]= React.useState(false);
 const onClickBtnMenu =()=>{
     isItMenu?setIsItMenu(false):setIsItMenu(true)
 }
 
 return(
+    
  <div className={isItMenu?"overly":"  overly-off "}>    
     <section className={props.isDarkThem &&!isItMenu ?  "navigation navigation_dark ":isItMenu? " navigation_menu ":"navigation"}>
         <h1 className={props.isDarkThem &&!isItMenu? " navigation__header navigation__header_dark ": " navigation__header"}>NewsExplorer</h1>
@@ -26,13 +27,10 @@ return(
         <li className="navigation__links"><button onClick={!isItMenu ? props.openPopup : ()=> {
 setIsItMenu(false)
 props.openPopup()
-        } } className={props.isLogin && props.isDarkThem &&!isItMenu? "navigation__btn-signout  navigation__btn-signout_dark" :props.isLogin? " navigation__btn-signout navigation__btn-signin ": "navigation__btn-signin "}>{props.isLogin ? `${name} ` :"Sign in" }</button></li>
+        } } className={props.isLogin && props.isDarkThem &&!isItMenu? "navigation__btn-signout  navigation__btn-signout_dark" :props.isLogin? " navigation__btn-signout  ": "navigation__btn-signin "}>{props.isLogin ? `${name} ` :"Sign in" }</button></li>
     </ul>
     </section>
     </div>
-
-
-
 )
  }
 export default Navigation
